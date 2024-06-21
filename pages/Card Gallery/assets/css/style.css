@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+h1 {
+    font-family: cursive;
+    margin-top:3%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+header .btn {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header .btn:hover, header .btn.active {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card1 .card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ca685b;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+.card1 .card-img {
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.card1 .title {
+    font-size: 2.5em;
+    margin: 0;
+    color: #e74c3c;
+    margin-top: 140px;
+}
+
+.card1 .title span {
+    color: #fff;
+}
+
+.card1 .description {
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.card2 .card {
+    background: rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff15;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    z-index: 2;
+}
+
+.card2 .title {
+    font-size: 1.2em;
+    color: #0c7e16;
+    margin-top: 10px;
+}
+
+.card2 .description {
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.card3 .container {
+    max-width: 600px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(60, 145, 230, 0.5);
+}
+
+.card3 .name {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.card3 .name span {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.card3 .message {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card3 .content p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.card3 .Shanks {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.card3 .github {
+    display: block;
+    margin-top: 10px;
+    color: rgba(255, 0, 0, 0.5);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.card3 .github:hover {
+    color: #fff;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ca685b;
+}

@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.hero-background {
+    position: relative;
+    background: url('https://rare-gallery.com/thumbs/366509-4k-wallpaper.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    padding-top: 200px;
+}
+.middle h4 {
+    color: #e74c3c;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+header .btn {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header .btn:hover, header .btn.active {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.contents .top .logo {
+    width: 150px;
+}
+
+.contents .middle {
+    margin: 20px 0;
+}
+
+.contents .middle .note {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contents .middle .card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ca685b;
+}
+
+.contents .middle .card-img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.contents .middle .title {
+    font-size: 2.5em;
+    margin: 0;
+    color: #e74c3c;
+}
+
+.contents .middle .title span {
+    color: #fff;
+}
+
+.contents .middle .description {
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.contents .social {
+    display: flex;
+    color: #e74c3c;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contents .social p {
+    margin-right: 10px;
+    color: #e74c3c;
+}
+p {
+    display: flex;
+    color: #e74c3c;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.contents .social .bi {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.contents .social .bi:hover {
+    color: #e74c3c;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #e74c3c;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.footer h6 {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+.footer a {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+.footer a:hover {
+    background-color: #ff1e00;
+}
+@media (max-width: 768px) {
+    .contents .middle .note {
+        font-size: 1.2em;
+    }
+
+    .contents .middle .title {
+        font-size: 2em;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom .footer {
+        margin-bottom: 10px;
+    }
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-left: 2px solid #d2dd34;
+    border-right: 2px solid #d2dd34;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eeff00;
+    border-radius: 10px;
+    border: 3px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d2dd34;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background: #1a1a1a;
+}
