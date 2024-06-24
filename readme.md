@@ -9,7 +9,7 @@
     <img src="./images/onepiece logo.png" alt="One Piece" width="130" height="130">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Seat Work 4</h3>
+  <h3 align="center">Hands on 2</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
@@ -20,7 +20,7 @@
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=AaronBeltran1/https://github.com/AaronBeltran1/WD-SW4)
+![](https://visit-counter.vercel.app/counter.png?page=AaronBeltran1/https://github.com/AaronBeltran1/WD-HandsOn2)
 
 ---
 
@@ -61,14 +61,14 @@ Description of the project in details.
 Guiding Question:
 - What is the project - The project is to create a Landing page that contains title, subtitle, descriptions, and the navigation to the pages. Another is to design and develop hero & cards that is visually appealing and has distinct layouts.
 - Whats the purpose - The purpose of this task is for me to develop and hone my skills on how to design and develop hero & cards in a website.
-- What are key components - MultiPage Website
+- What are key components - MultiPage Website and animations.
 - What technology used and how it is used - Using HTML and CSS with the help of Visual Studio Code I am able to achieve the said task.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website
-
+- Animations
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -109,3 +109,4 @@ WD-ProjectName
 | Title | Purpose | Link |
 |-|-|-|
 | w3schools | My guide for organizing the design and layouts of the project. | https://www.w3schools.com/ |
+|Learn Web|My guide for creating cards in my website.|https://www.youtube.com/watch?v=9FNNkzPBFcE&t=150s|

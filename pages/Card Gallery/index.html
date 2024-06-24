@@ -1,59 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Gallery</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
-        <a href="../../index.html" class="btn">Home</a>
-        <a href="../Hero 1/index.html" class="btn">Hero 1</a>
-        <a href="../Hero 2/index.html" class="btn">Hero 2</a>
-        <a href="../Hero 3/index.html" class="btn">Hero 3</a>
-        <a href="../Hero 4/index.html" class="btn">Hero 4</a>
-        <a href="../Hero 5/index.html" class="btn">Hero 5</a>
-        <a class="btn active">Card Gallery</a>
-    </header>
-    <h1></h1>
-
-    <section class="design-1">
-        <h1>Design 1</h1>
-        <div class="card1">
-            <div class="card">
-                <img class="card-img" src="./images/luffy.png" alt="Luffy Image">
-                <h1 class="title">COME AND WATCH THE<br>ANIME THAT EVERYONE TALKS ABOUT<span>.</span></h1>
-                <p class="description">Join Luffy and the Straw Hat Pirates in their adventure to find the One Piece and become the King of the Pirates. Dive into the action, camaraderie, and the never-ending quest for freedom!</p>
+    <div class="hero-background">
+        <header class="header">
+            <a href="../../index.html" class="btn">Home</a>
+            <a href="../Hero 1/index.html" class="btn">Hero 1</a>
+            <a href="../Hero 2/index.html" class="btn">Hero 2</a>
+            <a href="../Hero 3/index.html" class="btn">Hero 3</a>
+            <a href="../Hero 4/index.html" class="btn">Hero 4</a>
+            <a href="../Hero 5/index.html" class="btn">Hero 5</a>
+            <a class="btn active">Card Gallery</a>
+        </header>
+        <div class="contents">
+            <div class="top">
+                <img src="./images/onepiece logo.png" alt="onepiece logo" class="logo">
             </div>
-        </div>
-    </section>
-
-    <section class="design-2">
-        <h1>Design 2</h1>
-        <div class="card2">
-            <div class="card top-left">
-                <h2 class="title">Roronoa Zoro</h2>
-                <p class="description">Roronoa Zoro is a swordsman of the Straw Hat Pirates, known for his incredible strength and mastery of the three-sword style. His dream is to become the world's greatest swordsman.</p>
+            <div class="middle">
+                <h4 class="note">One Piece Character Cards</h4>
+                <div class="card-gallery">
+                    <h3>Static Cards</h3>
+                    <div class="card-wrapper">
+                        <div class="card card-style-1">
+                            <img src="./images/luffy.png" alt="Luffy">
+                            <div class="card-content">
+                                <h5>Monkey D. Luffy</h5>
+                                <p>The future Pirate King with a heart of gold.</p>
+                            </div>
+                        </div>
+                        <div class="card card-style-2">
+                            <img src="https://ih1.redbubble.net/image.3654086078.8371/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="Zoro">
+                            <div class="card-content">
+                                <h5>Roronoa Zoro</h5>
+                                <p>The swordsman with unparalleled strength.</p>
+                            </div>
+                        </div>
+                        <div class="card card-style-3">
+                            <img src="https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/3/nami-wanted-poster-shiro-vexel.jpg?&targetx=0&targety=-3&imagewidth=500&imageheight=700&modelwidth=500&modelheight=700&backgroundcolor=513D23&orientation=1" alt="Nami">
+                            <div class="card-content">
+                                <h5>Nami</h5>
+                                <p>The clever and resourceful navigator.</p>
+                            </div>
+                        </div>
+                        <div class="card card-style-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxnnLOR6j1xHngTHus6XsDi-IdR0K9osPQAg&s" alt="Sanji">
+                            <div class="card-content">
+                                <h5>Sanji</h5>
+                                <p>The chef with a fiery kick and a soft spot for women.</p>
+                            </div>
+                        </div>
+                        <div class="card card-style-5">
+                            <img src="https://w0.peakpx.com/wallpaper/350/172/HD-wallpaper-nico-robin-icon-nico-robin-one-piece-thumbnail.jpg" alt="Robin">
+                            <div class="card-content">
+                                <h5>Nico Robin</h5>
+                                <p>The archaeologist with a mysterious past.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Animated Cards</h3>
+                    <div class="card-wrapper">
+                        <div class="card animated-card-style-1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVffRESRblMwzqX9MYNmrSTxycXhVAiEfFGg&s" alt="Franky">
+                            <div class="card-content">
+                                <h5>Franky</h5>
+                                <p>The cyborg shipwright with a super personality.</p>
+                            </div>
+                        </div>
+                        <div class="card animated-card-style-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVqYcOgNjBPBFN5i5YgDHUZR9cO7Ha_tmxQ&s" alt="Brook">
+                            <div class="card-content">
+                                <h5>Brook</h5>
+                                <p>The living skeleton with a love for music and adventure.</p>
+                            </div>
+                        </div>
+                        <div class="card animated-card-style-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGj2Dq23MbdCs2Yz-pB9x8fWCKUyweQN7Eiw&s" alt="Chopper">
+                            <div class="card-content">
+                                <h5>Tony Tony Chopper</h5>
+                                <p>The adorable reindeer doctor.</p>
+                            </div>
+                        </div>
+                        <div class="card animated-card-style-4">
+                            <img src="https://c4.wallpaperflare.com/wallpaper/344/214/404/anime-one-piece-jinbe-one-piece-wallpaper-preview.jpg" alt="Jinbe">
+                            <div class="card-content">
+                                <h5>Jinbe</h5>
+                                <p>The honorable fish-man and helmsman.</p>
+                            </div>
+                        </div>
+                        <div class="card animated-card-style-5">
+                            <img src="https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/3/one-piece-wanted-poster-usopp-niklas-andersen.jpg?&targetx=0&targety=-11&imagewidth=500&imageheight=722&modelwidth=500&modelheight=700&backgroundcolor=291F13&orientation=1" alt="Usopp">
+                            <div class="card-content">
+                                <h5>Usopp</h5>
+                                <p>The sharpshooter with an incredible aim and imagination.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="design-3">
-        <h1>Design 3</h1>
-        <div class="card3">
-            <div class="left">
-                <div class="container">
-                    <h3 class="designer">The Red-Haired Pirate</h3>
-                    <h1 class="name"><span>S</span>hanks, <span>T</span>he <span>Y</span>onko</h1>
-                    <h4 class="message">Peace and power in one man.</h4>
-                    <p class="content">Shanks is the captain of the Red-Haired Pirates and one of the Four Emperors in the New World. Known for his calm and friendly demeanor, Shanks is a powerful and influential pirate with a deep sense of honor.</p>
-                    <img src="./images/shanks.png" alt="shanks" class="Shanks">
-                    <a href="https://github.com/AaronBeltran1" class="github">Github Account</a>
+            <div class="bottom">
+                <div class="footer">
+                    <p>Created by:</p>
+                    <h6>Eiichiro Oda</h6>
+                </div>
+                <div class="footer">
+                    <p>Join the adventure:</p>
+                    <a href="https://www.crunchyroll.com/one-piece" class="join-adventure">Watch One Piece</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>

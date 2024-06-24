@@ -15,30 +15,34 @@ body {
     width: 100%;
     top: 0;
     z-index: 10;
+    animation: slideDown 1s ease-out;
 }
 
 .header .btn {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .header .btn:hover, .header .btn.active {
     background-color: #0c7e16;
     border-radius: 5px;
+    transform: scale(1.1);
 }
 
 .hero {
     position: relative;
     min-height: 100vh;
     padding-top: 60px;
+    overflow: hidden;
 }
 
 .wallpaper {
     position: relative;
     text-align: center;
     color: white;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .top-layer, .lower-layer {
@@ -52,12 +56,14 @@ body {
 
 .top-layer {
     top: 40%;
+    animation: slideIn 1.5s ease-out;
 }
 
 .lower-layer {
     top: 50%;
     color: transparent;
     -webkit-text-stroke: 2px #00ff0d;
+    animation: slideIn 2s ease-out;
 }
 
 .background {
@@ -66,6 +72,7 @@ body {
     object-fit: cover;
     filter: brightness(50%);
     z-index: 0;
+    animation: zoomIn 15s infinite alternate;
 }
 
 .date {
@@ -74,6 +81,7 @@ body {
     right: 10px;
     text-align: right;
     z-index: 2;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .day {
@@ -96,6 +104,7 @@ body {
     flex-wrap: wrap;
     padding: 20px;
     z-index: 2;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .card {
@@ -108,6 +117,11 @@ body {
     height: 250px;
     position: relative;
     z-index: 2;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card img.character {
@@ -180,6 +194,7 @@ body {
         font-size: 0.8em;
     }
 }
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -193,4 +208,51 @@ body {
     background-color: #00ff0d;
     border-radius: 10px;
     border: 3px solid #0c7e16;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
